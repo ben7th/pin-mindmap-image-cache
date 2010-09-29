@@ -1,4 +1,4 @@
-require "pie-auth"
+require "pie-service-lib"
 class ImageCacheMetal < BaseMetal
   def self.routes
     {:method=>'GET',:regexp=>/^\/images\/(.+).(png|jpg|jpeg|gif|bmp)/}

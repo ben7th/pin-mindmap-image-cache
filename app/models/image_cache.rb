@@ -3,9 +3,10 @@ class ImageCache < ActiveRecord::Base
   belongs_to :mindmap
   # cache_money
   #index [:mindmap_id, :size_param]
-
-  @file_path = "#{UserBase::LOGO_PATH_ROOT}:class/:attachment/:id/:style/:basename.:extension"
-  @file_url = "#{UserBase::LOGO_URL_ROOT}:class/:attachment/:id/:style/:basename.:extension"
+  ATTACHED_FILE_URL_ROOT = "http://img.2010.mindpin.com/"
+  ATTACHED_FILE_PATH_ROOT = "/web/2010/images/"
+  @file_path = "#{ATTACHED_FILE_PATH_ROOT}:class/:attachment/:id/:style/:basename.:extension"
+  @file_url = "#{ATTACHED_FILE_URL_ROOT}:class/:attachment/:id/:style/:basename.:extension"
   has_attached_file :img,
     :path => @file_path,
     :url => @file_url

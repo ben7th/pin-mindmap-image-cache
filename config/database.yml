@@ -1,7 +1,7 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: pin-mindmap-image-cache-development
+  database: pin-mindmap-editor-development
   username: root
   password: root
   pool: 5
@@ -10,7 +10,7 @@ development:
 test:
   adapter: mysql
   encoding: utf8
-  database: pin-mindmap-image-cache-test
+  database: pin-mindmap-editor-test
   username: root
   password: root
   pool: 5
@@ -19,7 +19,7 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: pin-mindmap-image-cache
+  database: pin-mindmap-editor
   username: root
   password: root
   pool: 5
